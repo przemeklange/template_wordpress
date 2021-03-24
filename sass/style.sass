@@ -1,0 +1,273 @@
+
+//Theme Name: Przemysław Lange
+//Theme URI: none
+//Author: Random bloke
+//Author URI: http://wordpress.org/
+//Description: The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way.Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.
+//Version: 1.0
+//License: GNU General Public License v2 or later
+//License URI: http://www.gnu.org/licenses/gpl-2.0.html
+//Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+//Text Domain: twentythirteen
+
+@import precentage
+@import gallery
+
+$colorlightpink: #ffe7cc
+$colorgrey: #707070
+$colorlightgrey: #f5f5f5
+$colordarkgrey: #455a64
+$colorblack: #000000
+$colormint: #27debf
+$colotwhite: #ffffff
+*
+    font-family: 'Josefin Sans', sans-serif !important
+    box-sizing: border-box
+
+html
+    scroll-behavior: smooth
+
+.abs
+    position: absolute
+
+.pos
+    top: 0px
+    left: 0px
+
+.height
+    height: 80vh !important
+    position: relative !important
+    overflow: hidden !important
+    width: 100%
+
+.mojebg
+    width: 100%
+    height: 80vh
+    position: absolute
+    z-index: 2
+    overflow: hidden
+
+a
+    color: $colorgrey !important
+    transition: .4s ease
+    &:hover
+        font-weight: 400
+        color: $colordarkgrey !important
+
+.active
+    a
+        color: $colordarkgrey !important
+        font-weight: 600
+
+#linkhead
+    background-color: $colormint
+    padding: 10px 27px
+    border-radius: 25px
+    color: $colorblack !important
+    transition: .4s
+    text-decoration: none
+    margin-right: 15px
+    z-index: 10
+    &:hover
+        border: 1px solid $colormint !important
+        background-color: $colotwhite !important
+        color: $colormint !important
+
+#linkheadtwo
+    line-height: 44px
+    text-decoration: none
+    color: $colorblack !important
+    z-index: 10
+    &:hover
+        font-weight: 400
+        color: $colordarkgrey !important
+
+.pos
+    left: 40%
+    top: -200px
+    &:nth-child(2)
+        left: 10%
+        top: 250px
+    &:nth-child(3)
+        left: 35%
+        top: 100px
+    &:nth-child(4)
+        left: 37%
+        top: 190px
+    &:nth-child(5)
+        left: 80%
+        top: -100px
+
+.minitxt
+    color: $colormint
+    font-size: 12px
+
+.aboutme
+    font-size: 21px
+    font-weight: 600
+    color: $colorblack
+    padding: 20px 0
+
+.about
+    margin-right: 170px
+
+.btn__click
+    margin-top: 20px
+    background-color: $colormint
+    border-radius: 5px
+    height: 40px
+    width: 140px
+    display: flex
+    justify-content: center
+    line-height: 40px
+    font-size: 14px
+    color: $colotwhite
+    font-weight: 200
+    transition: .4s ease
+    cursor: pointer
+    &:hover
+        color: $colorlightgrey
+
+.circ
+    background-color: $colotwhite
+    box-shadow: 0px 13px 1em #00000021
+    border-radius: 20px !important
+    padding: 15px !important
+    height: 100% !important
+    min-height: 250px
+    p
+        padding-top: 15px
+
+.padtop
+    padding-top: 70px
+
+.padtop30
+    padding-top: 30px
+
+.whitespaceone
+    padding: 20px
+    box-shadow: 0px 8px 1em #00000021
+    max-width: 90%
+    border-radius: 10px
+    h2
+        padding: 10px 0
+    p
+        padding: 10px 0
+    img
+        padding: 10px 0px
+    button
+        background-color: $colormint
+        padding: 10px 27px
+        color: $colotwhite !important
+        transition: .4s
+        text-decoration: none
+        margin-right: 15px
+        z-index: 10
+        border: none
+        cursor: pointer
+        &:hover
+            border: 1px solid $colormint !important
+            background-color: $colotwhite !important
+            color: $colormint !important
+
+    &:nth-child(2)
+        max-height: 250px
+        padding: 40px 20px
+        max-width: 100%
+
+.greenspace
+    background-image: $colormint !important
+    background: $colormint !important
+    color: $colotwhite
+    box-shadow: 0px 8px 1em #00000021 !important
+    button
+        background-color: $colotwhite
+        padding: 10px 27px
+        color: $colormint !important
+        transition: .4s
+        text-decoration: none
+        margin-right: 15px
+        z-index: 10
+        border: none
+        cursor: pointer
+        &:hover
+            border: 1px solid $colotwhite !important
+            background-color: $colormint !important
+            color: $colotwhite !important
+
+#myProgress
+    width: 95%
+    background-color: #abd8d0
+    margin: 15px 0px
+
+.myBar
+    width: 95%
+    height: 4px
+    background-color: $colormint
+
+.mybartwo
+    width: 85%
+    height: 4px
+    background-color: $colormint
+
+#arrow
+    transform: rotate(270deg)
+    position: fixed
+    bottom: 3%
+    width: 30px
+    right: 3%
+    background-color: $colorlightgrey
+    padding: 5px
+    border-radius: 4px
+    transition: .4s ease
+    cursor: pointer
+    &:hover
+        background-color: $colorgrey
+
+.title_services
+    h2
+        font-size: 14px !important
+        color: $colormint !important
+    p
+        font-size: 24px !important
+
+.map
+    left: 50%
+    top: -50px
+    transform: translate(-50%, 0%)
+
+input.middle:focus
+    outline-width: 0 !important
+
+input:focus, input.form-control:focus
+
+    outline: none !important
+    outline-width: 0 !important
+    box-shadow: none
+    -moz-box-shadow: none
+    -webkit-box-shadow: none
+
+.form-control
+    padding: .575rem .75rem !important
+    font-size: 12px !important
+
+.sendmess
+    background: $colormint
+    font-size: 12px !important
+    color: $colotwhite
+    transition: .4 
+    &:hover
+        background-color: $colotwhite
+        border: 1px solid $colormint
+        color: $colormint
+
+@media screen and ( max-width: 1024px )
+    .mojebg
+        display: none
+
+    #about
+        height: 100%
+
+    .sliderod
+        padding-top: 14rem
+        padding-bottom: 5rem
